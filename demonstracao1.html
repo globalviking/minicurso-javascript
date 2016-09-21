@@ -113,6 +113,29 @@
 	    write('Neste momento o valor ' + i);
 	}
 
+	var nome = prompt('Digite seu nome', 'digite nome');
+	var idade = Number(prompt('Digite sua idade', 'digite idade'));
+
+
+
+	alert(typeof idade);
+	if (!isNaN(idade)){
+	    alert('Nome: ' + nome +" você está velho com " + idade + " anos.");
+	}
+	else{
+	    alert('Digite um número');
+	}
+
+	var retornoConfirm = confirm('Você deseja voltar?');
+
+	if (retornoConfirm) {
+	    alert('Você clicou sim');
+	}
+	else {
+	    alert('Você clocou não');
+	}
+
+
     </script>
 
 </body>

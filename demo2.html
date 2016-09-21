@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>.NET CODERS - JavaScript Basic</title>
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">JavaScript Basic</a>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="demo1.html">Conceitos Básicos</a></li>
+                    <li class="active"><a href="demo2.html">Cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <!-- Cadastrar -->
+        <form id="formCadastrar">
+            <h2>Cadastrar Amigos</h2>
+            <div class="form-horizontal">
+                <div id="divAlert">
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="txtNome">Nome</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" id="nome" name="Nome" type="text" value="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="txtEmail">Email</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" id="email"
+                               name="Email" type="email" value="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="button" id="btnIncluir" value="Cadastrar" class="btn btn-primary">
+                        <!--<input type="button" id="btnIncluir" value="Cadastrar" onclick="onCadastrarClienteClick();" class="btn btn-primary">-->
+                    </div>
+                </div>
+            </div>
+        </form>
+        <h2>Lista de Amigos</h2>
+        <ul id="nomes"></ul>
+
+        <hr />
+        <footer>
+            <p>&copy; <label id="lblTimeYear">Datetime</label> - Demo em JavaScript (.NetCoders)</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+  
+    <script src="js/demo2.js"></script>
+
+</body>
+</html>

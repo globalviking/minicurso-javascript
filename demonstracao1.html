@@ -56,10 +56,39 @@
 	    return n1 + n2 + n3 + n4;
 	}
 
-	var somaTotal= somarValores(7, 5);
+	var somaTotal = somarValores(7, 5);
 
-	write(somaTotal);
+	var somaTotal2 = function(n1, n2) {
+	    return n1 + n2;
+	}  
 
+	var retornaSoma = somaTotal2(4, 8);
+
+	//write(somaTotal2(4,8));
+	if (somaTotal > 50) {
+	    write('A soma total é maior que 50');
+	}
+	else if(somaTotal == 12){
+	    write('A soma total é igual a 12');
+	}
+	else if(somaTotal < 50 || somaTotal > 10){
+	    write('A soma total é menor que 50');
+	}
+	else {
+	    write('Não atende nenhuma das confições')
+	}
+
+	var valor = 5;
+
+	switch (valor) {
+	    case 1: write('Valor é 1');
+		break;
+	    case 2: write('Valor é 2');
+		break;
+	    case 3,5: write('Valor é 3');
+		break;
+	    default: write('Valor não encontrado');
+	}
     </script>
 
 </body>

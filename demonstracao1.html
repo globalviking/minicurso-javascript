@@ -27,68 +27,92 @@
     </footer>
     
     <script>
-        //Criando variavel
-        var bairro = 'Tatuapé';
-        var possuiCNH = true;
-        var idade = 30;
-	
-	var _idade = 30;
-	var $bairro = 'ddasdf';
-
-
-        //document.write(typeof possuiCNH);
-
+//        //Criando variavel
+//        var bairro = 'Tatuapé';
+//        var possuiCNH = true;
+//        var idade = 30;
+//	
+//	var _idade = 30;
+//	var $bairro = 'ddasdf';
+//
+//
+//        //document.write(typeof possuiCNH);
+//
 	function write(texto) {
 	    document.write(texto + '<br />');
 	} 
+//	
+//	write("Nozes aqui!!!!");
+//	write("Segunda linha");
+//	
+//	function somar(n1, n2) {
+//	    return n1 + n2;
+//	}
+//	
+//	var n4 = 10;
+//
+//	function somarValores(n1, n2) {
+//	    var n3 = 8;
+//	    return n1 + n2 + n3 + n4;
+//	}
+//
+//	var somaTotal = somarValores(7, 5);
+//
+//	var somaTotal2 = function(n1, n2) {
+//	    return n1 + n2;
+//	}  
+//
+//	var retornaSoma = somaTotal2(4, 8);
+//
+//	//write(somaTotal2(4,8));
+//	if (somaTotal > 50) {
+//	    write('A soma total é maior que 50');
+//	}
+//	else if(somaTotal == 12){
+//	    write('A soma total é igual a 12');
+//	}
+//	else if(somaTotal < 50 || somaTotal > 10){
+//	    write('A soma total é menor que 50');
+//	}
+//	else {
+//	    write('Não atende nenhuma das confições')
+//	}
+//
+//	var valor = 5;
+//
+//	switch (valor) {
+//	    case 1: write('Valor é 1');
+//		break;
+//	    case 2: write('Valor é 2');
+//		break;
+//	    case 3,5: write('Valor é 3');
+//		break;
+//	    default: write('Valor não encontrado');
+//	}
+
+	//Loop
+	write('Do');
+	var controle = 0;
+
+	//Passa sempre a primeira vez
+	do {
+	    write('Neste momento o valor ' + controle++);
+	}
+
+	while (controle < 10);
 	
-	write("Nozes aqui!!!!");
-	write("Segunda linha");
-	
-	function somar(n1, n2) {
-	    return n1 + n2;
-	}
-	
-	var n4 = 10;
-
-	function somarValores(n1, n2) {
-	    var n3 = 8;
-	    return n1 + n2 + n3 + n4;
+	//Passa enquanto atende a condição
+	write('While');
+	var controle = 0;
+	while (controle <= 10) {
+	    write('Neste momento o valor ' + controle++);
 	}
 
-	var somaTotal = somarValores(7, 5);
-
-	var somaTotal2 = function(n1, n2) {
-	    return n1 + n2;
-	}  
-
-	var retornaSoma = somaTotal2(4, 8);
-
-	//write(somaTotal2(4,8));
-	if (somaTotal > 50) {
-	    write('A soma total é maior que 50');
-	}
-	else if(somaTotal == 12){
-	    write('A soma total é igual a 12');
-	}
-	else if(somaTotal < 50 || somaTotal > 10){
-	    write('A soma total é menor que 50');
-	}
-	else {
-	    write('Não atende nenhuma das confições')
+	write('For');
+	for (var i = 0; i < controle; i++){
+	    write('Neste momento o valor ' + i);
 	}
 
-	var valor = 5;
-
-	switch (valor) {
-	    case 1: write('Valor é 1');
-		break;
-	    case 2: write('Valor é 2');
-		break;
-	    case 3,5: write('Valor é 3');
-		break;
-	    default: write('Valor não encontrado');
-	}
     </script>
 
 </body>
